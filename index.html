@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Antriksha Nautiyal - Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      animation: fadeIn 1s ease-in;
+      background: #0e0e0e url('bg2.gif') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+    }
+    nav {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      background: rgba(0, 0, 0, 0.3);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 50px;
+      z-index: 1000;
+    }
+    nav h1 {
+      font-size: 1.5em;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+    }
+    .intro-screen {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: rgba(0, 0, 0, 0.8);
+      z-index: 2000;
+      color: white;
+      font-size: 3rem;
+      animation: fadeOut 3s ease-in-out forwards;
+      animation-delay: 2s;
+    }
+    @keyframes fadeOut {
+      to {
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+    section {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+      margin: 60px auto;
+      padding: 30px;
+      max-width: 1000px;
+      background: rgba(20, 20, 20, 0.6);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 0 30px rgba(100, 0, 200, 0.3);
+    }
+    .show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+  <div class="intro-screen">Antriksha Nautiyal</div>
+  <header>
+    <nav>
+      <h1><img src="logo.png" alt="Logo" class="logo-img" /> Antriksha Nautiyal</h1>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#extra">Extra</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h2>Welcome</h2>
+    <p>Hello! I'm Antriksha Nautiyal, a passionate and skilled developer enthusiastic about AI, Blockchain, Full Stack Web Development, and more. Explore my work, achievements, and experience through this animated portfolio.</p>
+    <img src="pic2.jpg" alt="Antriksha" style="width: 200px; border-radius: 20px; margin-top: 20px;"/>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am Antriksha Nautiyal, a third-year engineering student pursuing Computer Science Engineering from Dr. A. P. J. Abdul Kalam Technical University. I aspire to become a successful and experienced software developer in the future through the technical knowledge provided to me by all the knowledgeable people I see as inspiration. I wish to develop expertise in the field of software which makes me want to be a part of the skillful and innovative world we all want to be part of. I also hope to be an inspiration for others and make a difference in society.
+
+        When I am not thinking about technical stuff, I read lots of novels and journal too! Apart from this, I am way too interested in theatre. 
+        
+        I am here to build a stronger network with people who share the same interests and grab some opportunities that would strengthen both my mind and my resume. Looking forward to connecting with everyone around!</p>
+    <p>I am a passionate Computer Science student specializing in AI, Full Stack Development, and Cybersecurity. I have a strong foundation in algorithms, data structures, and system design. My expertise spans across backend technologies like Node.js and Express.js, along with frontend frameworks like React.js. I am always exploring new advancements in AI, blockchain, and cloud computing.</p>
+    <p>I thrive in problem-solving environments and enjoy working on projects that have real-world impact. My experience includes leading teams in hackathons, participating in research, and contributing to open-source projects. I also served as the Marketing Head of Aarohan (DGI Coding Society) and was a Student Council member at Salwan Public School, showcasing my leadership and communication skills.</p>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <ul>
+      <li><strong>Bachelor of Technology (B.Tech), Computer Science Engineering</strong> - Dr. A.P.J Abdul Kalam Technical University (Expected 2026) - 7.4</li>
+      <li><strong>12th (CBSE)</strong> - Salwan Public School - 89%</li>
+      <li><strong>10th (CBSE)</strong> - Salwan Public School - 85%</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li><strong>VISIONTOWER360</strong>: AI-powered CCTV Surveillance System with advanced anomaly detection, real-time alerting, and facial recognition. Achieved 99.9% accuracy using YOLOv8. Integrated with a cloud dashboard for live monitoring. [<a href="https://github.com/Shagodae/CCTV-PROJECT" target="_blank">GitHub</a>]</li><br>
+      <li><strong>Online Auction System</strong>: Developed a real-time auction platform enabling live bidding using WebSockets. Built with React, Express.js, and MongoDB, ensuring a seamless user experience. [<a href="https://github.com/Shagodae/Online-Auction-Platform---Backend" target="_blank">GitHub</a>]</li><br>
+      <li><strong>FarmBaseOne</strong>: A blockchain-based marketplace connecting farmers with direct buyers. Ensures transparent transactions and fair pricing. Built with Solidity, Ethereum smart contracts, and IPFS storage. [<a href="https://github.com/Shagodae/FarmbaseOne" target="_blank">GitHub</a>]</li><br>
+      <li><strong>Line Follower Robot</strong>: Developed an Arduino-powered robot using infrared sensors to navigate paths efficiently. Used PID control to enhance accuracy in movement.</li>
+    </ul>
+  </section>
+
+  <section id="research">
+    <h2>Research Work</h2>
+    <p><strong>Low Power Efficient Task Allocation In Wireless Sensor Networks</strong> - Published in SCOPUS under ICOTET-2024.</p>
+    <p>The research focuses on optimizing task distribution in wireless sensor networks to improve power efficiency and extend network lifespan. By implementing a machine learning-based algorithm, the proposed method reduces energy consumption by 30% compared to conventional approaches. This work is particularly useful in smart cities and IoT-driven applications.</p>
+  </section>
+
+  <section id="achievements">
+    <h2>Achievements</h2>
+    <ul>
+      <li>Selected as a finalist in the IDE Bootcamp Hackathon organized by GITS Udaipur.</li>
+      <li>Participated in the IDE Bootcamp Hackathon at NITTR Chandigarh.</li>
+      <li>I am currently working on my development skills and currently pursuing a course frpm UDEMY</li>
+      <li>Completed APLHA Course from APNA COLLEGE to enhance my problem solving skiils!</li>
+      <li>Certified in Cybersecurity by Cisco Networking Academy.</li>
+      <li>Earned AWS Cloud Foundations Certification by Amazon Web Services.</li>
+      <li>Certified in Data Visualization by IBM via Coursera.</li>
+    </ul>
+  </section>
+
+  <section id="extra">
+    <h2>Extra-Curriculars</h2>
+    <ul>
+      <li>Marketing Head - Aarohan (DGI Coding Society)</li>
+      <li>Student Council Member - Salwan Public School</li>
+      <li>Volunteered at various college technical events and workshops</li>
+      <li>I like to read books and I learn new languages. Currently I am learning Japanese</li>
+      <li>I also like to learn instruemnts, I like to play flute!</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>If you'd like to collaborate or reach out for any opportunities, feel free to connect!</p>
+    <ul>
+      <li><strong>Email:</strong> antrikshanautiyal29@gmail.com</li>
+      <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/antriksha-nautiyal-637621274/" target="_blank">Antriksha Nautiyal</a></li>
+      <li><strong>GitHub:</strong> <a href="https://github.com/Shagodae" target="_blank">Shagodae</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Antriksha Nautiyal. All rights reserved.</p>
+  </footer>
+</body>
+</html> 
